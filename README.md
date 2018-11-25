@@ -17,10 +17,14 @@
 - Ability to check stats for best and worse sections and percentage estimations for accuracy.
 
 Must-have features:
-
+-
+-
+-
 
 Nice-to-have features:
-
+-
+-
+-
 
 
 **Offline GPS locations caching that can be overlayed on a map when connected to online. (Too easy if GPS library is simple to use)**
@@ -29,7 +33,9 @@ Nice-to-have features:
   -  Parking?
   
 Must-have features:
-
+-
+-
+-
 
 Nice-to-have features:
   
@@ -41,10 +47,14 @@ Nice-to-have features:
   
 
 Must-have features:
-
+-
+-
+-
 
 Nice-to-have features:
-
+-
+-
+-
 
 
 WIRE FRAMES:
