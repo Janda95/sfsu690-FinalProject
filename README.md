@@ -7,6 +7,8 @@
 ### Code Reviewers:
 
 
+##Milestone #1
+
 ### Initial Project Ideas:
 **Trap Shooting app**
 
