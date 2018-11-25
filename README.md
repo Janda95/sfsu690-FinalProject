@@ -2,7 +2,7 @@
 Final project for 690, Interactive Multimedia Application Development, at San Francisco State University. 
 
 Project Contributers:
-Jarek L Rettinghouse -> Janda95
+-Jarek L Rettinghouse -> Janda95
 
 Code Reviewers:
 
