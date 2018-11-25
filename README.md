@@ -9,9 +9,9 @@ Code Reviewers:
 
 Project Ideas:
 - Trap Shooting app
-  -- Keeps track of general scores for both types of trap shooting.
-  -- Easy to input scores
-  -- Ability to check stats for best and worse sections and percentage estimations for accuracy.
+  - Keeps track of general scores for both types of trap shooting.
+  - Easy to input scores
+  - Ability to check stats for best and worse sections and percentage estimations for accuracy.
 
 
 
