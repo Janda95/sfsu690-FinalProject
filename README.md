@@ -17,13 +17,16 @@
 - Ability to check stats for best and worse sections and percentage estimations for accuracy.
 
 Must-have features:
--
--
--
+- Overall stats for user
+- Display games and navigate to edit game
+- Add new game
+- Delete game
+- Save User and Game Data
+- 
 
 Nice-to-have features:
--
--
+- Mulitple Users
+- 
 -
 
 
@@ -33,29 +36,17 @@ Nice-to-have features:
   -  Parking?
   
 Must-have features:
--
--
--
+- Save Location Data
+- Overlay over a map
+- Connecting lines
+- Compass
+
 
 Nice-to-have features:
+- Distances included
+- Data displayed on the side
+- Moveable locations by hand
   
-  
-**Reading sailing equipment and interactions with sailing equipment (Too large for independent project?)**
-
-  - Ability to view and manage incoming data from sailing equipment from a boat
-  - Easy to customize and view
-  
-
-Must-have features:
--
--
--
-
-Nice-to-have features:
--
--
--
-
 
 WIRE FRAMES:
 
