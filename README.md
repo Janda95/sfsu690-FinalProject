@@ -5,7 +5,7 @@
 -Jarek L Rettinghouse -> Janda95
 
 ### Code Reviewers:
-
+-Robert Quinones -> rquinones93
 
 ## Milestone #1
 
