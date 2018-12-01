@@ -7,8 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B1AB15AA21B31B7C00667D04 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1AB15A921B31B7C00667D04 /* MainPageViewController.swift */; };
+		B1AB15AC21B31C2E00667D04 /* PlayerSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1AB15AB21B31C2E00667D04 /* PlayerSelectionViewController.swift */; };
+		B1AB15AE21B31C9400667D04 /* CurrentGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1AB15AD21B31C9400667D04 /* CurrentGameViewController.swift */; };
+		B1AB15B021B31CC000667D04 /* UserCreation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1AB15AF21B31CC000667D04 /* UserCreation.swift */; };
+		B1AB15B421B31D4B00667D04 /* PlayerStatsSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1AB15B321B31D4B00667D04 /* PlayerStatsSelectionViewController.swift */; };
+		B1AB15B621B31E0500667D04 /* DisplayStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1AB15B521B31E0400667D04 /* DisplayStatsViewController.swift */; };
+		B1AB15B821B31E4000667D04 /* UserDeletionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1AB15B721B31E4000667D04 /* UserDeletionViewController.swift */; };
+		B1AB15BA21B31F4700667D04 /* GameListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1AB15B921B31F4700667D04 /* GameListViewController.swift */; };
+		B1AB15BC21B31F8B00667D04 /* GameDisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1AB15BB21B31F8B00667D04 /* GameDisplayViewController.swift */; };
+		B1AB15BE21B323CA00667D04 /* PlayerClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1AB15BD21B323CA00667D04 /* PlayerClass.swift */; };
+		B1AB15C021B323D700667D04 /* GameClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1AB15BF21B323D700667D04 /* GameClass.swift */; };
 		B1D9D17221B0AA6B009625A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D9D17121B0AA6B009625A0 /* AppDelegate.swift */; };
-		B1D9D17421B0AA6B009625A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D9D17321B0AA6B009625A0 /* ViewController.swift */; };
 		B1D9D17721B0AA6B009625A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1D9D17521B0AA6B009625A0 /* Main.storyboard */; };
 		B1D9D17921B0AA79009625A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1D9D17821B0AA79009625A0 /* Assets.xcassets */; };
 		B1D9D17C21B0AA79009625A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1D9D17A21B0AA79009625A0 /* LaunchScreen.storyboard */; };
@@ -34,9 +44,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B1AB15A921B31B7C00667D04 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
+		B1AB15AB21B31C2E00667D04 /* PlayerSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerSelectionViewController.swift; sourceTree = "<group>"; };
+		B1AB15AD21B31C9400667D04 /* CurrentGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentGameViewController.swift; sourceTree = "<group>"; };
+		B1AB15AF21B31CC000667D04 /* UserCreation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCreation.swift; sourceTree = "<group>"; };
+		B1AB15B321B31D4B00667D04 /* PlayerStatsSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerStatsSelectionViewController.swift; sourceTree = "<group>"; };
+		B1AB15B521B31E0400667D04 /* DisplayStatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayStatsViewController.swift; sourceTree = "<group>"; };
+		B1AB15B721B31E4000667D04 /* UserDeletionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDeletionViewController.swift; sourceTree = "<group>"; };
+		B1AB15B921B31F4700667D04 /* GameListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListViewController.swift; sourceTree = "<group>"; };
+		B1AB15BB21B31F8B00667D04 /* GameDisplayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDisplayViewController.swift; sourceTree = "<group>"; };
+		B1AB15BD21B323CA00667D04 /* PlayerClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerClass.swift; sourceTree = "<group>"; };
+		B1AB15BF21B323D700667D04 /* GameClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameClass.swift; sourceTree = "<group>"; };
 		B1D9D16E21B0AA6B009625A0 /* TrapShootingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrapShootingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1D9D17121B0AA6B009625A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B1D9D17321B0AA6B009625A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B1D9D17621B0AA6B009625A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B1D9D17821B0AA79009625A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1D9D17B21B0AA79009625A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -77,6 +97,8 @@
 		B1BA62FE21B0AE5000AEDE88 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B1AB15BD21B323CA00667D04 /* PlayerClass.swift */,
+				B1AB15BF21B323D700667D04 /* GameClass.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -84,6 +106,15 @@
 		B1BA62FF21B0AE6700AEDE88 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				B1AB15A921B31B7C00667D04 /* MainPageViewController.swift */,
+				B1AB15AB21B31C2E00667D04 /* PlayerSelectionViewController.swift */,
+				B1AB15AD21B31C9400667D04 /* CurrentGameViewController.swift */,
+				B1AB15AF21B31CC000667D04 /* UserCreation.swift */,
+				B1AB15B321B31D4B00667D04 /* PlayerStatsSelectionViewController.swift */,
+				B1AB15B521B31E0400667D04 /* DisplayStatsViewController.swift */,
+				B1AB15B721B31E4000667D04 /* UserDeletionViewController.swift */,
+				B1AB15B921B31F4700667D04 /* GameListViewController.swift */,
+				B1AB15BB21B31F8B00667D04 /* GameDisplayViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -112,7 +143,6 @@
 			isa = PBXGroup;
 			children = (
 				B1D9D17121B0AA6B009625A0 /* AppDelegate.swift */,
-				B1D9D17321B0AA6B009625A0 /* ViewController.swift */,
 				B1BA62FE21B0AE5000AEDE88 /* Models */,
 				B1D9D17521B0AA6B009625A0 /* Main.storyboard */,
 				B1D9D17821B0AA79009625A0 /* Assets.xcassets */,
@@ -272,7 +302,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B1D9D17421B0AA6B009625A0 /* ViewController.swift in Sources */,
+				B1AB15AE21B31C9400667D04 /* CurrentGameViewController.swift in Sources */,
+				B1AB15AC21B31C2E00667D04 /* PlayerSelectionViewController.swift in Sources */,
+				B1AB15BA21B31F4700667D04 /* GameListViewController.swift in Sources */,
+				B1AB15BE21B323CA00667D04 /* PlayerClass.swift in Sources */,
+				B1AB15C021B323D700667D04 /* GameClass.swift in Sources */,
+				B1AB15B021B31CC000667D04 /* UserCreation.swift in Sources */,
+				B1AB15B821B31E4000667D04 /* UserDeletionViewController.swift in Sources */,
+				B1AB15B421B31D4B00667D04 /* PlayerStatsSelectionViewController.swift in Sources */,
+				B1AB15AA21B31B7C00667D04 /* MainPageViewController.swift in Sources */,
+				B1AB15B621B31E0500667D04 /* DisplayStatsViewController.swift in Sources */,
+				B1AB15BC21B31F8B00667D04 /* GameDisplayViewController.swift in Sources */,
 				B1D9D17221B0AA6B009625A0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
