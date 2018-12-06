@@ -16,20 +16,57 @@ class MainPageViewController: UIViewController {
     }
     
     
-    /*
-    override func performSegue(withIdentifier identifier: "NewGame", sender: Any?) {
-        <#code#>
+    @IBAction func NewGameButton(_ sender: Any) {
+        performSegue(withIdentifier: "NewGame", sender: self)
     }
-    override func performSegue(withIdentifier identifier: "NewUser", sender: Any?) {
-        <#code#>
+    
+    @IBAction func NewUserButton(_ sender: Any) {
+        performSegue(withIdentifier: "NewUser", sender: self)
     }
-    override func performSegue(withIdentifier identifier: "DeleteUser", sender: Any?) {
-        <#code#>
+    
+    @IBAction func ExistingGameButton(_ sender: Any) {
+        performSegue(withIdentifier: "ExistingGame", sender: self)
     }
-    override func performSegue(withIdentifier identifier: "UserStats", sender: Any?) {
-        <#code#>
+    
+    @IBAction func DeleteUserButton(_ sender: Any) {
+        performSegue(withIdentifier: "DeleteUser", sender: self)
     }
-    override func performSegue(withIdentifier identifier: "ExistingGame", sender: Any?) {
-        <#code#>
-    }*/
+    
+    @IBAction func UserStatsButton(_ sender: Any) {
+        performSegue(withIdentifier: "UserStats", sender: self)
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier {
+        case "NewUser":
+            if let destination1 = segue.destination as? UserCreationViewController {
+                
+            }
+            break
+        case "DeleteUser":
+            if let destination2 = segue.destination as? UserDeletionViewController{
+                
+            }
+            break
+        case "UserStats":
+            if let destination3 = segue.destination as?  PlayerStatsSelectionViewController{
+                
+            }
+            break
+        case "ExistingGame":
+            if let destination4 = segue.destination as? GameListViewController {
+                
+            }
+            break
+        case "NewGame":
+            if let destination5 = segue.destination as? PlayerSelectionViewController {
+                
+            }
+            break
+        default:
+            break
+            
+        }
+    }
 }
