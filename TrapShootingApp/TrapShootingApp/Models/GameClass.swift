@@ -1,9 +1,6 @@
-//
-//  GameClass.swift
-//  TrapShootingApp
-//
-//  Created by Jarek Rettinghouse on 12/1/18.
-//  Copyright © 2018 JLR. All rights reserved.
-//
 
 import Foundation
+
+struct Game {
+    var gamedata: [Int] = Array(repeating: 0, count: 25)
+}

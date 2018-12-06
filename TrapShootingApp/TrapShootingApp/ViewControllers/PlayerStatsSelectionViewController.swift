@@ -15,9 +15,8 @@ class PlayerStatsSelectionViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-    /*
-    override func performSegue(withIdentifier identifier: "DisplayPlayerStats", sender: Any?) {
-        <#code#>
-    }*/
+    var playerStatsList: [Player] = []
+    
+    //set up tableview
     
 }

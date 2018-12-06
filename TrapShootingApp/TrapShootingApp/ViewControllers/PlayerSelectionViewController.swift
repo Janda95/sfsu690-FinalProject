@@ -14,6 +14,8 @@ class PlayerSelectionViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    var playerSelectionList: [Player] = []
     /*
     override func performSegue(withIdentifier identifier: "CurrentGame", sender: Any?) {
         <#code#>

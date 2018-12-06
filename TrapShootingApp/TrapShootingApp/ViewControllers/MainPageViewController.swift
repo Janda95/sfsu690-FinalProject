@@ -15,6 +15,8 @@ class MainPageViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
+    var playerList: [Player] = []
+    
     
     @IBAction func NewGameButton(_ sender: Any) {
         performSegue(withIdentifier: "NewGame", sender: self)

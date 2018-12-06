@@ -15,9 +15,26 @@ class UserCreationViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-    /*
-    override func performSegue(withIdentifier identifier: "SaveNewUser", sender: Any?) {
-        <#code#>
+    @IBOutlet weak var usernameTextField: UITextField!
+    
+    @IBOutlet weak var fullnameTextField: UITextField!
+    
+    
+    
+    @IBAction func addNewUserButton(_ sender: Any) {
+        guard let username = usernameTextField.text,
+        let fullname = fullnameTextField.text else {
+            //do nothing
+            return
+        }
+        
+        if username == "" || fullname == ""{
+            //maybe an error message
+            return
+        }
+        
+        //add user to player list in main and segue
     }
-     */
+    
+    //Perform segue back to main screen saving information
 }

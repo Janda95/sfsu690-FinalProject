@@ -14,10 +14,11 @@ class CurrentGameViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
+    //new Game data for editing to be sent to player with corresponding id set in player selection
+    var newGame = Game()
+    var playerid: Int = -1
     
-    /*
-    override func performSegue(withIdentifier identifier: "SaveGame", sender: Any?) {
-        <#code#>
-    }
-     */
+    //on game save, append function game to playerid from player array
+    
+    
 }
