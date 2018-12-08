@@ -15,7 +15,7 @@ class MainPageViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-    var playerList: [Player] = []
+    var playerList: [Player] = [Player("Jarek","JLR")]
     
     
     @IBAction func NewGameButton(_ sender: Any) {
@@ -39,36 +39,38 @@ class MainPageViewController: UIViewController {
     }
     
     
+    @IBAction func unwindToSaveNewGame(_ sender: UIStoryboardSegue){}
+    
+    @IBAction func unwindToDeleteUsers(_ sender: UIStoryboardSegue){}
+    
+    @IBAction func unwindToSaveNewUser(_ sender: UIStoryboardSegue){}
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch segue.identifier {
         case "NewUser":
-            if let destination1 = segue.destination as? UserCreationViewController {
-                
-            }
-            break
-        case "DeleteUser":
-            if let destination2 = segue.destination as? UserDeletionViewController{
-                
-            }
-            break
-        case "UserStats":
-            if let destination3 = segue.destination as?  PlayerStatsSelectionViewController{
-                
-            }
-            break
-        case "ExistingGame":
-            if let destination4 = segue.destination as? GameListViewController {
-                
-            }
-            break
-        case "NewGame":
-            if let destination5 = segue.destination as? PlayerSelectionViewController {
-                
-            }
-            break
-        default:
+            if let destination1 = segue.destination as? UserCreationViewController {}
             break
             
+        case "DeleteUser":
+            if let destination2 = segue.destination as? UserDeletionViewController{}
+            break
+            
+        case "UserStats":
+            if let destination3 = segue.destination as?  PlayerStatsSelectionViewController{}
+            break
+            
+        case "ExistingGame":
+            if let destination4 = segue.destination as? GameListViewController {}
+            break
+            
+        case "NewGame":
+            if let destination5 = segue.destination as? PlayerSelectionViewController {
+                destination5.playerSelectionList = playerList
+            }
+            break
+            
+        default:
+            break
         }
     }
 }

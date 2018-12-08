@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B10BCE9121BB313D00B4232E /* GameDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10BCE9021BB313D00B4232E /* GameDataViewController.swift */; };
 		B1AB15AA21B31B7C00667D04 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1AB15A921B31B7C00667D04 /* MainPageViewController.swift */; };
 		B1AB15AC21B31C2E00667D04 /* PlayerSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1AB15AB21B31C2E00667D04 /* PlayerSelectionViewController.swift */; };
 		B1AB15AE21B31C9400667D04 /* CurrentGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1AB15AD21B31C9400667D04 /* CurrentGameViewController.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B10BCE9021BB313D00B4232E /* GameDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDataViewController.swift; sourceTree = "<group>"; };
 		B1AB15A921B31B7C00667D04 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 		B1AB15AB21B31C2E00667D04 /* PlayerSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerSelectionViewController.swift; sourceTree = "<group>"; };
 		B1AB15AD21B31C9400667D04 /* CurrentGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentGameViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				B1AB15A921B31B7C00667D04 /* MainPageViewController.swift */,
+				B10BCE9021BB313D00B4232E /* GameDataViewController.swift */,
 				B1AB15AB21B31C2E00667D04 /* PlayerSelectionViewController.swift */,
 				B1AB15AD21B31C9400667D04 /* CurrentGameViewController.swift */,
 				B1AB15AF21B31CC000667D04 /* UserCreation.swift */,
@@ -303,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1AB15AE21B31C9400667D04 /* CurrentGameViewController.swift in Sources */,
+				B10BCE9121BB313D00B4232E /* GameDataViewController.swift in Sources */,
 				B1AB15AC21B31C2E00667D04 /* PlayerSelectionViewController.swift in Sources */,
 				B1AB15BA21B31F4700667D04 /* GameListViewController.swift in Sources */,
 				B1AB15BE21B323CA00667D04 /* PlayerClass.swift in Sources */,

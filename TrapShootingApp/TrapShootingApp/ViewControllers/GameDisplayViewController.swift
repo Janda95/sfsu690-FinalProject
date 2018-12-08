@@ -15,4 +15,13 @@ class GameDisplayViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination1 = segue.destination as? GameDataViewController {
+            
+        }
+    }
+    
+    //performSegue(withIdentifier: "displayExistingGame", sender: self)
+    
+    
 }

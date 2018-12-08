@@ -30,4 +30,8 @@ class Player: Codable {
         self.username = username
     }
     
+    func getName() -> String{
+        return username
+    }
+    
 }
