@@ -15,6 +15,8 @@ class GameListViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
+    var gameListPlayerList: [Player] = []
+    
     /*
     override func performSegue(withIdentifier identifier: "ViewGameInfo", sender: Any?) {
         <#code#>
