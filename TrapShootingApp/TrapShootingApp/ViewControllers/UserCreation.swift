@@ -8,33 +8,53 @@
 
 import UIKit
 
-class UserCreationViewController: UIViewController {
+class UserCreationViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        errorTextField.text = ""
+        usernameTextField.delegate = self
+        fullnameTextField.delegate = self
     }
     
     @IBOutlet weak var usernameTextField: UITextField!
     
     @IBOutlet weak var fullnameTextField: UITextField!
     
+    @IBOutlet weak var errorTextField: UILabel!
     
     
-    @IBAction func addNewUserButton(_ sender: Any) {
+    @IBAction func createUserButton(_ sender: Any) {
         guard let username = usernameTextField.text,
-        let fullname = fullnameTextField.text else {
-            //do nothing
-            return
+            let fullname = fullnameTextField.text else {
+                print("Textfield error!")
+                return
         }
         
-        if username == "" || fullname == ""{
-            //maybe an error message
+        if username == ""{
+            errorTextField.text = "Please enter Username"
             return
+        } else if fullname == "" {
+            errorTextField.text = "Please enter Fullname"
+            return
+        } else {
+            performSegue(withIdentifier: "unwindUserCreation", sender: self)
         }
-        
-        //add user to player list in main and segue
     }
     
-    //Perform segue back to main screen saving information
+    //textfield return will exit edit mode
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        fullnameTextField.resignFirstResponder()
+        usernameTextField.resignFirstResponder()
+        return true
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? MainPageViewController, let user = usernameTextField.text, let full = fullnameTextField.text {
+            destination.playerList.append(Player(full, user))
+        }
+    }
+    
 }
