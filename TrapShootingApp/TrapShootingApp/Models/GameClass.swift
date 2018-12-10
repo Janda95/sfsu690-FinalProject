@@ -23,23 +23,23 @@ struct Game {
         
         for shot in gamedata {
             switch gamedata[shot]{
+            case 0:
+                dataString = dataString + " -"
             case 1:
                 dataString = dataString + " H"
             case 2:
                 dataString = dataString + " M"
-            case 0:
-                dataString = dataString + " -"
             default:
                 break
             }
             switch shot {
-            case 5:
+            case 4:
                 dataString = dataString + "  "
-            case 15:
+            case 14:
                 dataString = dataString + "  "
-            case 10:
+            case 9:
                 dataString = dataString + "\n"
-            case 20:
+            case 19:
                 dataString = dataString + "\n"
             default:
                 break
