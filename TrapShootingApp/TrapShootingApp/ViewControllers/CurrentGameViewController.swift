@@ -55,12 +55,25 @@ class CurrentGameViewController: UIViewController, UITextFieldDelegate{
         
         newGame.gamedata[currentNumber-1] = 1
         displayShotsLabel.text = newGame.returnDataString()
+        if(currentNumber == 25){
+            currentNumber = 1
+        } else {
+            currentNumber = currentNumber + 1
+        }
+        shotNumber.text = String(currentNumber)
     }
     
     //2 is miss
     @IBAction func missButton(_ sender: Any) {
         newGame.gamedata[currentNumber-1] = 2
         displayShotsLabel.text = newGame.returnDataString()
+        if(currentNumber == 25){
+            currentNumber = 1
+        } else {
+            currentNumber = currentNumber + 1
+        }
+        shotNumber.text = String(currentNumber)
+        
     }
     
     //do checks and save game else print error message
