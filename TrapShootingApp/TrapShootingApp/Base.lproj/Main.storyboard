@@ -399,49 +399,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ae8-Xd-EDD">
-                                <rect key="frame" x="16" y="64" width="79" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ae8-Xd-EDD">
+                                <rect key="frame" x="16" y="74" width="343" height="21"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fullname" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mb1-Ap-FS2">
-                                <rect key="frame" x="16" y="93" width="69" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fullname" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mb1-Ap-FS2">
+                                <rect key="frame" x="16" y="105" width="343" height="21"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Games played" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvO-ho-RO4">
-                                <rect key="frame" x="16" y="122" width="109" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Games played" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvO-ho-RO4">
+                                <rect key="frame" x="16" y="136" width="343" height="21"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Games AVG" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gk7-cb-wi1">
-                                <rect key="frame" x="16" y="151" width="91" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Games AVG" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gk7-cb-wi1">
+                                <rect key="frame" x="16" y="167" width="343" height="21"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Last game played TIME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hiF-vj-apn">
-                                <rect key="frame" x="16" y="180" width="178" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last game played TIME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hiF-vj-apn">
+                                <rect key="frame" x="16" y="198" width="343" height="21"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="total hit / total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TX3-69-zMc">
-                                <rect key="frame" x="16" y="209" width="106" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="total hit / total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TX3-69-zMc">
+                                <rect key="frame" x="16" y="229" width="343" height="21"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -449,12 +443,40 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.71307225230000004" green="0.89867411799999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="aoJ-Ji-Yph" firstAttribute="trailing" secondItem="ae8-Xd-EDD" secondAttribute="trailing" constant="16" id="3G7-cL-fUd"/>
+                            <constraint firstItem="TX3-69-zMc" firstAttribute="leading" secondItem="aoJ-Ji-Yph" secondAttribute="leading" constant="16" id="7Od-qo-nO5"/>
+                            <constraint firstItem="gk7-cb-wi1" firstAttribute="leading" secondItem="aoJ-Ji-Yph" secondAttribute="leading" constant="16" id="9lQ-Gc-rcC"/>
+                            <constraint firstItem="mb1-Ap-FS2" firstAttribute="top" secondItem="ae8-Xd-EDD" secondAttribute="bottom" constant="10" id="A7i-WY-U7S"/>
+                            <constraint firstItem="hiF-vj-apn" firstAttribute="leading" secondItem="aoJ-Ji-Yph" secondAttribute="leading" constant="16" id="BfK-Mo-Q90"/>
+                            <constraint firstItem="gk7-cb-wi1" firstAttribute="top" secondItem="fvO-ho-RO4" secondAttribute="bottom" constant="10" id="NBw-zO-Lnd"/>
+                            <constraint firstItem="aoJ-Ji-Yph" firstAttribute="trailing" secondItem="mb1-Ap-FS2" secondAttribute="trailing" constant="16" id="OQE-MO-uch"/>
+                            <constraint firstItem="aoJ-Ji-Yph" firstAttribute="trailing" secondItem="fvO-ho-RO4" secondAttribute="trailing" constant="16" id="SAo-QH-Vln"/>
+                            <constraint firstItem="ae8-Xd-EDD" firstAttribute="leading" secondItem="aoJ-Ji-Yph" secondAttribute="leading" constant="16" id="Vc1-SF-qW8"/>
+                            <constraint firstItem="aoJ-Ji-Yph" firstAttribute="trailing" secondItem="gk7-cb-wi1" secondAttribute="trailing" constant="16" id="YBf-5V-WG3"/>
+                            <constraint firstItem="TX3-69-zMc" firstAttribute="top" secondItem="hiF-vj-apn" secondAttribute="bottom" constant="10" id="d0h-EG-k5o"/>
+                            <constraint firstItem="ae8-Xd-EDD" firstAttribute="top" secondItem="aoJ-Ji-Yph" secondAttribute="top" constant="10" id="eYP-Au-Som"/>
+                            <constraint firstItem="fvO-ho-RO4" firstAttribute="leading" secondItem="aoJ-Ji-Yph" secondAttribute="leading" constant="16" id="fth-Ki-Lf1"/>
+                            <constraint firstItem="aoJ-Ji-Yph" firstAttribute="trailing" secondItem="hiF-vj-apn" secondAttribute="trailing" constant="16" id="gyL-uU-S0S"/>
+                            <constraint firstItem="aoJ-Ji-Yph" firstAttribute="trailing" secondItem="TX3-69-zMc" secondAttribute="trailing" constant="16" id="hql-cY-Ptk"/>
+                            <constraint firstItem="hiF-vj-apn" firstAttribute="top" secondItem="gk7-cb-wi1" secondAttribute="bottom" constant="10" id="kvn-Mu-cIm"/>
+                            <constraint firstItem="mb1-Ap-FS2" firstAttribute="leading" secondItem="aoJ-Ji-Yph" secondAttribute="leading" constant="16" id="njW-H7-8Id"/>
+                            <constraint firstItem="fvO-ho-RO4" firstAttribute="top" secondItem="mb1-Ap-FS2" secondAttribute="bottom" constant="10" id="pjq-P9-gvU"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="aoJ-Ji-Yph"/>
                     </view>
+                    <connections>
+                        <outlet property="fullnameLabel" destination="mb1-Ap-FS2" id="iFm-Dr-3q0"/>
+                        <outlet property="gameAverageLabel" destination="gk7-cb-wi1" id="FvK-3m-n3Q"/>
+                        <outlet property="gamesplayedLabel" destination="fvO-ho-RO4" id="UuX-QY-AtO"/>
+                        <outlet property="lastGamePlayedLabel" destination="hiF-vj-apn" id="0J8-n9-KAl"/>
+                        <outlet property="totalHLabel" destination="TX3-69-zMc" id="TqA-2b-dI9"/>
+                        <outlet property="usernameLabel" destination="ae8-Xd-EDD" id="YRF-OI-iOX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mzi-EM-9Yn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2433" y="134"/>
+            <point key="canvasLocation" x="2432.8000000000002" y="133.5832083958021"/>
         </scene>
         <!--Player Selection View Controller-->
         <scene sceneID="shf-FT-kdb">

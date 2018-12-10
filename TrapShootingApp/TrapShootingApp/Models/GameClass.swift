@@ -53,4 +53,14 @@ struct Game {
         return numberOfZeros
     }
     
+    func totalHit() -> Int {
+        var counter: Int = 0
+        for shot in gamedata {
+            if gamedata[shot] == 1 {
+                counter = counter + 1
+            }
+        }
+        return counter
+    }
+    
 }
