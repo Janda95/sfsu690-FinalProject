@@ -28,7 +28,7 @@ class CurrentGameViewController: UIViewController {
     @IBOutlet weak var shotNumber: UILabel!
     @IBOutlet weak var displayShotsLabel: UILabel!
     
-    @IBAction func minusButton(_ sender: Any) {
+    @IBAction func minusButton(_ sender: UIButton) {
         if(currentNumber == 1){
             currentNumber = 25
         } else {
@@ -37,7 +37,7 @@ class CurrentGameViewController: UIViewController {
         shotNumber.text = String(currentNumber)
     }
     
-    @IBAction func plusButton(_ sender: Any) {
+    @IBAction func plusButton(_ sender: UIButton) {
         if(currentNumber == 25){
             currentNumber = 1
         } else {
