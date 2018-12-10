@@ -13,13 +13,14 @@ class CurrentGameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        newGame = Game()
         currentNumber = 1
         shotNumber.text = String(currentNumber)
         newGame.date = Date()
         displayShotsLabel.text = newGame.returnDataString()
     }
     //new Game data for editing to be sent to player with corresponding id set in player selection
-    var newGame = Game()
+    var newGame: Game = nil
     var playerid: Int = -1
     var currentNumber: Int = -1
     
