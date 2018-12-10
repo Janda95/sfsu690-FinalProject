@@ -28,6 +28,8 @@ class Player: Codable {
     init(_ fullname: String, _ username: String){
         self.fullname = fullname
         self.username = username
+        //for testing
+        Games.append(Game())
     }
     
     func getName() -> String{

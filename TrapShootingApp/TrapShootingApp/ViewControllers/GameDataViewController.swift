@@ -13,7 +13,11 @@ class GameDataViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        print(gamePlaceholder.gamename)
     }
+    
+    var gamePlaceholder: Game!
+    
     var localname: String = ""
     var localarray: [Int] = Array(repeating: 0, count: 25)
     var localdate: Date = Date()

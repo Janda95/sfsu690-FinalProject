@@ -17,6 +17,7 @@ class MainPageViewController: UIViewController {
     //main array of Player information
     var playerList: [Player] = [Player("Jarek","JLR")]
     
+    
     //segue button to player selection for new game
     @IBAction func NewGameButton(_ sender: Any) {
         performSegue(withIdentifier: "NewGame", sender: self)

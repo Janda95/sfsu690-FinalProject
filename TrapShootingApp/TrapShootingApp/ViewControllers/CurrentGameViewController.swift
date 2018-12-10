@@ -8,13 +8,14 @@
 
 import UIKit
 
-class CurrentGameViewController: UIViewController {
+class CurrentGameViewController: UIViewController, UITextFieldDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
         shotNumber.text = String(currentNumber)
         displayShotsLabel.text = newGame.returnDataString()
         errorMsgLabel.text = ""
+        gamenameTextField.delegate = self
     }
     
     //new Game data for editing to be sent to player with corresponding id set in player selection
@@ -85,7 +86,10 @@ class CurrentGameViewController: UIViewController {
     //prepare segue to main screen
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? MainPageViewController {
+            print(destination.playerList[playerid].Games.count)
             destination.playerList[playerid].Games.append(newGame)
+            print(destination.playerList[playerid].Games.count)
+            
         }
     }
     

@@ -8,17 +8,51 @@
 
 import UIKit
 
-class GameListViewController: UIViewController {
+class GameListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        tableView.delegate = self
+        tableView.dataSource = self
     }
     
     var gameListPlayerList: [Player] = []
     
-    /*
-    override func performSegue(withIdentifier identifier: "ViewGameInfo", sender: Any?) {
-        <#code#>
-    }*/
+    @IBOutlet weak var tableView: UITableView!
+    
+
+    
+    //creating cell row count for index later
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return gameListPlayerList.count
+    }
+    
+    //text for cell
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let indexItem = gameListPlayerList[indexPath.row]
+        let playertext = indexItem.username
+        let cell = tableView.dequeueReusableCell(withIdentifier: "gamedataPlayerCell" )!
+        cell.textLabel?.text = playertext
+        return cell
+    }
+    
+    //cell sizing
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return CGFloat(50)
+    }
+    
+    //player selected, pass info in prepare()
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "ViewGameInfo", sender: self)
+    }
+    
+    //prepare segue by passing related player
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? GameDisplayViewController {
+            if let temp: Int = tableView.indexPathForSelectedRow?.row {
+                destination.playerPlaceholder = gameListPlayerList[temp]
+            }
+        }
+    }
 }
