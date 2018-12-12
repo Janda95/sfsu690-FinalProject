@@ -19,14 +19,16 @@ Nice to have features:
 See Milestone 0 Folder
 
 
-Features Completed:
+###Progression
+
+####Features Completed:
 
 
-Features in progress:
+####Features in progress:
 
 
-Remaining must have features:
+####Remaining must have features:
 
 
-Nice to have features:
+####Nice to have features:
 
