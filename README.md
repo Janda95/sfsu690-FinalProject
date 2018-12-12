@@ -8,6 +8,25 @@
 -Robert Quinones -> rquinones93
 
 ## Milestone #1
+Project decided on: Trap shooting Score Keeping Applications
+
+Must Have Features:
+
+
+Nice to have features:
 
 ### Initial Project Ideas:
 See Milestone 0 Folder
+
+
+Features Completed:
+
+
+Features in progress:
+
+
+Remaining must have features:
+
+
+Nice to have features:
+
