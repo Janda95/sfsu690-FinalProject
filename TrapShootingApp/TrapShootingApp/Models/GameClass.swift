@@ -1,14 +1,60 @@
 
 import Foundation
 
-struct Game {
+class Game: Codable{
     //default array representing empty data
     var gamedata: [Int] = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     var date: Date
     
+    var shot1: Int = 0
+    var shot2: Int = 0
+    var shot3: Int = 0
+    var shot4: Int = 0
+    var shot5: Int = 0
+    
+    var shot6: Int = 0
+    var shot7: Int = 0
+    var shot8: Int = 0
+    var shot9: Int = 0
+    var shot10: Int = 0
+    
+    var shot11: Int = 0
+    var shot12: Int = 0
+    var shot13: Int = 0
+    var shot14: Int = 0
+    var shot15: Int = 0
+    
+    var shot16: Int = 0
+    var shot17: Int = 0
+    var shot18: Int = 0
+    var shot19: Int = 0
+    var shot20: Int = 0
+    
+    var shot21: Int = 0
+    var shot22: Int = 0
+    var shot23: Int = 0
+    var shot24: Int = 0
+    var shot25: Int = 0
+    
     //For displaying information
     var gamename: String = "Game"
     var dataString: String = "Shots: "
+    
+    //Coding Keys
+    private enum CodingKeysGames: String, CodingKey{
+        case date
+        case gamedata
+        case gamename
+    }
+    
+    //decode Game information
+    required init (from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeysGames.self)
+        date = try! values.decode(Date.self, forKey: .date)
+        gamename = try! values.decode(String.self, forKey: .gamename)
+        gamedata = (try! values.decode([Int].self, forKey: .gamedata))
+        print(gamedata)
+    }
     
     init() {
         date = Date()

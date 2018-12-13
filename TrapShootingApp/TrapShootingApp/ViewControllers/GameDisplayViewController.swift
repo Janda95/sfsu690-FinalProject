@@ -31,6 +31,9 @@ class GameDisplayViewController: UIViewController, UITableViewDataSource, UITabl
         let indexItem = playerPlaceholder.Games[indexPath.row]
         let gametext = indexItem.gamename
         let cell = tableView.dequeueReusableCell(withIdentifier: "gameCell")!
+        cell.layer.masksToBounds = true
+        cell.layer.cornerRadius = 2
+        cell.layer.borderWidth = 1
         cell.textLabel?.text = gametext
         return cell
     }

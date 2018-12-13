@@ -20,18 +20,38 @@ class Player: Codable {
         case username
     }
     
+    /*enum CodingArrayKey: Game, CodingKey{
+        typealias RawValue = [Game]
+        
+        case RawValue
+    }*/
+    
     required init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
-        fullname = try! values.decode(String.self, forKey: .fullname)
-        username = try! values.decode(String.self, forKey: .username)
-        //decode games
+            fullname = try! values.decode(String.self, forKey: .fullname)
+            username = try! values.decode(String.self, forKey: .username)
+            //Games = [try! values.decode(Game.self, forKey: .games)]
+            //Games = try? JSONDecoder().decode(Game.self, from: <#T##Data#>)
+        guard let dataFromStorage = UserDefaults.standard.object(forKey: "Games") as? Data else {
+            return
+        }
+        let decoder = JSONDecoder()
+        let tempArray = try! decoder.decode([Game].self, from: dataFromStorage)
+        Games = Games + tempArray
     }
+    
+    func encodeGames(){
+        let encoder = JSONEncoder()
+        let encoded = try! encoder.encode(Games)
+        UserDefaults.standard.set(encoded, forKey: "Games")
+    }
+    
     
     init(_ fullname: String, _ username: String){
         self.fullname = fullname
         self.username = username
+        Games = []
         //for testing
-        Games.append(Game())
     }
     
     func getName() -> String{

@@ -34,6 +34,9 @@ class GameListViewController: UIViewController, UITableViewDataSource, UITableVi
         let playertext = indexItem.username
         let cell = tableView.dequeueReusableCell(withIdentifier: "gamedataPlayerCell" )!
         cell.textLabel?.text = playertext
+        cell.layer.masksToBounds = true
+        cell.layer.cornerRadius = 2
+        cell.layer.borderWidth = 1
         return cell
     }
     

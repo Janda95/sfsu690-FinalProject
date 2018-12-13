@@ -33,6 +33,9 @@ class PlayerStatsSelectionViewController: UIViewController, UITableViewDataSourc
         let indexItem = playerStatsList[indexPath.row]
         let playertext = indexItem.username
         let cell = tableView.dequeueReusableCell(withIdentifier: "statselect" )!
+        cell.layer.masksToBounds = true
+        cell.layer.cornerRadius = 2
+        cell.layer.borderWidth = 1
         cell.textLabel?.text = playertext
         return cell
     }

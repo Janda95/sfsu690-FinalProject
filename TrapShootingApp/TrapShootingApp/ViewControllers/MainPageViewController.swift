@@ -12,10 +12,29 @@ class MainPageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        guard let dataFromStorage = UserDefaults.standard.object(forKey: "playerList") as? Data else {
+            return
+        }
+        let decoder = JSONDecoder()
+        let tempArray = try! decoder.decode([Player].self, from: dataFromStorage)
+        playerList = playerList + tempArray
+        
     }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        //for each player, encodes games with arrays before players
+        for player in playerList {
+            player.encodeGames()
+        }
+        
+        //encode players
+        let encoder = JSONEncoder()
+        let encoded = try! encoder.encode(playerList)
+        UserDefaults.standard.set(encoded, forKey: "playerList")
+    }
+    
     //main array of Player information
-    var playerList: [Player] = [Player("Jarek","JLR")]
+    var playerList: [Player] = []
     
     
     //segue button to player selection for new game

@@ -31,6 +31,9 @@ class UserDeletionViewController: UIViewController, UITableViewDataSource, UITab
         let indexItem = deletionPlayerList[indexPath.row]
         let playertext = indexItem.username
         let cell = tableView.dequeueReusableCell(withIdentifier: "deleteUserSelection" )!
+        cell.layer.masksToBounds = true
+        cell.layer.cornerRadius = 2
+        cell.layer.borderWidth = 1
         cell.textLabel?.text = playertext
         return cell
     }
