@@ -56,9 +56,11 @@ class Game: Codable{
         print(gamedata)
     }
     
+    //init date
     init() {
         date = Date()
     }
+    
     //init gamename
     init(_ name: String){
         date = Date()
@@ -78,12 +80,11 @@ class Game: Codable{
             } else {
                 dataString = dataString + " -"
             }
-            //spacing in between every 5 shots
+            //spacing in between every 5 shots (Does not work for Labels)
             if shot == 4 || shot == 14 || shot == 9 || shot == 19 {
-                dataString = dataString + "  "
+                dataString = dataString + " _ "
             }
         }
-        
         return dataString
     }
     
@@ -111,7 +112,7 @@ class Game: Codable{
         return counter
     }
     
-    
+    //returns string of details for first 5 shots of game
     func first5() -> String {
         var fiveShots: String = ""
         
@@ -127,6 +128,7 @@ class Game: Codable{
         return fiveShots
     }
     
+    //returns string of details for second 5 shots of game
     func second5() -> String {
         var fiveShots: String = ""
         
@@ -142,6 +144,7 @@ class Game: Codable{
         return fiveShots
     }
     
+    //returns string of details for third 5 shots of game
     func third5() -> String {
         var fiveShots: String = ""
         
@@ -157,6 +160,7 @@ class Game: Codable{
         return fiveShots
     }
     
+    //returns string of details for fourth 5 shots of game
     func fourth5() -> String {
         var fiveShots: String = ""
         
@@ -172,6 +176,7 @@ class Game: Codable{
         return fiveShots
     }
     
+    //returns string of details for fifth 5 shots of game
     func fifth5() -> String {
         var fiveShots: String = ""
         

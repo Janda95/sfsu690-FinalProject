@@ -10,28 +10,23 @@ import Foundation
 
 class Player: Codable {
     
+    //Data Variables
     var fullname: String
     var username: String
     var Games: [Game] = []
-    //var average: Double = 0.0
     
+    //Coding Keys
     enum CodingKeys: String, CodingKey{
         case fullname
         case username
     }
     
-    /*enum CodingArrayKey: Game, CodingKey{
-        typealias RawValue = [Game]
-        
-        case RawValue
-    }*/
-    
     required init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
-            fullname = try! values.decode(String.self, forKey: .fullname)
-            username = try! values.decode(String.self, forKey: .username)
-            //Games = [try! values.decode(Game.self, forKey: .games)]
-            //Games = try? JSONDecoder().decode(Game.self, from: <#T##Data#>)
+        fullname = try! values.decode(String.self, forKey: .fullname)
+        username = try! values.decode(String.self, forKey: .username)
+        
+        //Decode Game Data and place in game array
         guard let dataFromStorage = UserDefaults.standard.object(forKey: "Games") as? Data else {
             return
         }
@@ -40,6 +35,7 @@ class Player: Codable {
         Games = Games + tempArray
     }
     
+    //encode function for games to call in main function in encode players
     func encodeGames(){
         let encoder = JSONEncoder()
         let encoded = try! encoder.encode(Games)
@@ -58,6 +54,7 @@ class Player: Codable {
         return username
     }
     
+    //average over all games
     func avg() -> Double{
         if Games.count == 0 {
             return 0.0
@@ -71,6 +68,7 @@ class Player: Codable {
         return totalH / Double(totalGames)
     }
     
+    //Most Recent game played time of creation
     func lastGameTime() -> String {
         if Games.count == 0 {
             return "N/A"
@@ -81,6 +79,7 @@ class Player: Codable {
         }
     }
     
+    //total hit in all games / total shots
     func totalhit() -> String {
         let totalGames = Games.count
         let totalShots = totalGames*25
