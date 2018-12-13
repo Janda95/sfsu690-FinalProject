@@ -10,6 +10,7 @@ import UIKit
 
 class GameDataViewController: UIViewController {
     
+    //sets labels
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -18,6 +19,7 @@ class GameDataViewController: UIViewController {
         gamenameLabel.text = "Game: " + gamePlaceholder.gamename
         gametimeLabel.text = gamePlaceholder.date.description
         
+        //call game function to create personal string
         first5Label.text = "1: " + gamePlaceholder.first5()
         second5Label.text = "2: " + gamePlaceholder.second5()
         third5Label.text = "3: " + gamePlaceholder.third5()
@@ -28,10 +30,12 @@ class GameDataViewController: UIViewController {
     var gamePlaceholder: Game!
     var playername: String!
     
+    //Player Name and info labels
     @IBOutlet weak var playernameLabel: UILabel!
     @IBOutlet weak var gamenameLabel: UILabel!
     @IBOutlet weak var gametimeLabel: UILabel!
     
+    //Display sets of 5 data points into labels in rows
     @IBOutlet weak var first5Label: UILabel!
     @IBOutlet weak var second5Label: UILabel!
     @IBOutlet weak var third5Label: UILabel!

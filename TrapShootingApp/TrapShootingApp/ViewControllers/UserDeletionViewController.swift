@@ -58,6 +58,7 @@ class UserDeletionViewController: UIViewController, UITableViewDataSource, UITab
         return [delete]
     }
     
+    //unwind segue for saving deleted players if counts are different
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let unwindDestination = segue.destination as? MainPageViewController {
             if unwindDestination.playerList.count != deletionPlayerList.count {

@@ -62,8 +62,4 @@ class PlayerSelectionViewController: UIViewController, UITableViewDataSource, UI
             
         }
     }
-    
-    //Layout Constraints
-    
-    
 }

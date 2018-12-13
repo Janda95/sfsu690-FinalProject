@@ -10,6 +10,7 @@ import UIKit
 
 class GameListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    //setting tableview delegates
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -17,10 +18,10 @@ class GameListViewController: UIViewController, UITableViewDataSource, UITableVi
         tableView.dataSource = self
     }
     
+    //local playerlist
     var gameListPlayerList: [Player] = []
     
     @IBOutlet weak var tableView: UITableView!
-    
 
     
     //creating cell row count for index later

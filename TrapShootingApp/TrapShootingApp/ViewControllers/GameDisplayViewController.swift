@@ -9,7 +9,6 @@
 import UIKit
 
 class GameDisplayViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         gameTableView.delegate = self

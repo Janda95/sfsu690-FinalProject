@@ -10,6 +10,7 @@ import UIKit
 
 class MainPageViewController: UIViewController {
     
+    //loads data from json storage
     override func viewDidLoad() {
         super.viewDidLoad()
         guard let dataFromStorage = UserDefaults.standard.object(forKey: "playerList") as? Data else {
@@ -21,6 +22,7 @@ class MainPageViewController: UIViewController {
         
     }
     
+    //saves data into json when main view disappears
     override func viewDidDisappear(_ animated: Bool) {
         //for each player, encodes games with arrays before players
         for player in playerList {
@@ -61,6 +63,7 @@ class MainPageViewController: UIViewController {
     @IBAction func UserStatsButton(_ sender: Any) {
         performSegue(withIdentifier: "UserStats", sender: self)
     }
+    
     
     //NOTE: unwind is special segue using exit function to adhere to Navigation Controller schema
     //handle information for new Game() for player X
@@ -110,7 +113,5 @@ class MainPageViewController: UIViewController {
             break
         }
     }
-    
-    //Layout Constraints
     
 }

@@ -10,6 +10,7 @@ import UIKit
 
 class CurrentGameViewController: UIViewController, UITextFieldDelegate{
     
+    //sets label.text values
     override func viewDidLoad() {
         super.viewDidLoad()
         shotNumber.text = String(currentNumber)
