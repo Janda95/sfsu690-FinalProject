@@ -13,7 +13,7 @@ class Player: Codable {
     var fullname: String
     var username: String
     var Games: [Game] = []
-    var average: Double = 0.0
+    //var average: Double = 0.0
     
     enum CodingKeys: String, CodingKey{
         case fullname
@@ -24,6 +24,7 @@ class Player: Codable {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         fullname = try! values.decode(String.self, forKey: .fullname)
         username = try! values.decode(String.self, forKey: .username)
+        //decode games
     }
     
     init(_ fullname: String, _ username: String){

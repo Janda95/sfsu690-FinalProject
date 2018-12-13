@@ -41,6 +41,7 @@ struct Game {
         return dataString
     }
     
+    //check if there are no missing datapoints
     func checkCompletion() -> Int{
         //Zero represents an empty entry
         var numberOfZeros: Int = 0
@@ -53,6 +54,7 @@ struct Game {
         return numberOfZeros
     }
     
+    //total hit in a game
     func totalHit() -> Int {
         var counter: Int = 0
         for shot in gamedata {
@@ -63,4 +65,79 @@ struct Game {
         return counter
     }
     
+    
+    func first5() -> String {
+        var fiveShots: String = ""
+        
+        for i in 0..<5 {
+            if gamedata[i] == 1 {
+                fiveShots = fiveShots + " H"
+            } else if gamedata[i] == 2 {
+                fiveShots = fiveShots + " M"
+            } else {
+                fiveShots = fiveShots + " -"
+            }
+        }
+        return fiveShots
+    }
+    
+    func second5() -> String {
+        var fiveShots: String = ""
+        
+        for i in 5..<10 {
+            if gamedata[i] == 1 {
+                fiveShots = fiveShots + " H"
+            } else if gamedata[i] == 2 {
+                fiveShots = fiveShots + " M"
+            } else {
+                fiveShots = fiveShots + " -"
+            }
+        }
+        return fiveShots
+    }
+    
+    func third5() -> String {
+        var fiveShots: String = ""
+        
+        for i in 10..<15 {
+            if gamedata[i] == 1 {
+                fiveShots = fiveShots + " H"
+            } else if gamedata[i] == 2 {
+                fiveShots = fiveShots + " M"
+            } else {
+                fiveShots = fiveShots + " -"
+            }
+        }
+        return fiveShots
+    }
+    
+    func fourth5() -> String {
+        var fiveShots: String = ""
+        
+        for i in 15..<20 {
+            if gamedata[i] == 1 {
+                fiveShots = fiveShots + " H"
+            } else if gamedata[i] == 2 {
+                fiveShots = fiveShots + " M"
+            } else {
+                fiveShots = fiveShots + " -"
+            }
+        }
+        return fiveShots
+    }
+    
+    func fifth5() -> String {
+        var fiveShots: String = ""
+        
+        for i in 20..<25 {
+            if gamedata[i] == 1 {
+                fiveShots = fiveShots + " H"
+            } else if gamedata[i] == 2 {
+                fiveShots = fiveShots + " M"
+            } else {
+                fiveShots = fiveShots + " -"
+            }
+        }
+        return fiveShots
+    }
 }

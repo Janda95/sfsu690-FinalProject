@@ -50,6 +50,7 @@ class GameDisplayViewController: UIViewController, UITableViewDataSource, UITabl
         if let destination = segue.destination as? GameDataViewController {
             if let temp: Int = gameTableView.indexPathForSelectedRow?.row {
                 destination.gamePlaceholder = playerPlaceholder.Games[temp]
+                destination.playername = playerPlaceholder.fullname
             }
         }
     }
