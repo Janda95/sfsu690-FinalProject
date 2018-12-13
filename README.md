@@ -17,11 +17,11 @@ See Milestone 0 Folder
 ## Progression
 
 ### Features Completed:
-New User
-User Deletion
-NewGame With single Player associated
-User Statistics Page
-Review over Single Game
+-New User
+-User Deletion
+-NewGame With single Player associated
+-User Statistics Page
+-Review over Single Game
 
 ### Features in progress:
 N/A
@@ -30,10 +30,10 @@ N/A
 N/A
 
 ### Nice to have features:
-Game Deletion
-Game Editing
-Help Page
-More detailed user information and Stats
-UI Visual Improvements
-Level of difficulty Indications
-Google Maps UI implementation
+-Game Deletion
+-Game Editing
+-Help Page
+-More detailed user information and Stats
+-UI Visual Improvements
+-Level of difficulty Indications
+-Google Maps UI implementation
