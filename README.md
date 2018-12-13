@@ -10,11 +10,6 @@
 ## Milestone #1
 Project decided on: Trap shooting Score Keeping Applications
 
-Must Have Features:
-
-
-Nice to have features:
-
 ### Initial Project Ideas:
 See Milestone 0 Folder
 
@@ -22,13 +17,23 @@ See Milestone 0 Folder
 ## Progression
 
 ### Features Completed:
-
+New User
+User Deletion
+NewGame With single Player associated
+User Statistics Page
+Review over Single Game
 
 ### Features in progress:
-
+N/A
 
 ### Remaining must have features:
-
+N/A
 
 ### Nice to have features:
-
+Game Deletion
+Game Editing
+Help Page
+More detailed user information and Stats
+UI Visual Improvements
+Level of difficulty Indications
+Google Maps UI implementation
