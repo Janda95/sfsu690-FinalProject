@@ -7,6 +7,20 @@
 ### Code Reviewers:
 -Robert Quinones -> rquinones93
 
+### Development Environment:
+- Computer: Mac Mini 
+- 2014 1.4GHz i5
+- 4GB 1600 DDR3 Ram
+- Version 10.13.6 
+- High Sierra
+
+- XCode Version : 10.1
+
+### Testing Environment:
+- NOTE: Did not use xcode simulator feature due to RAM Limitations
+- IPhone 5s
+
+
 ## Milestone #1
 Project decided on: Trap shooting Score Keeping Applications
 
