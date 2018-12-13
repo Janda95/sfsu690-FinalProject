@@ -82,7 +82,7 @@ class CurrentGameViewController: UIViewController, UITextFieldDelegate{
         if playerid == -1{
             print ("Player Id not passed")
             return
-        } else if newGame.checkCompletion() >= 1 {
+        } else if newGame.checkCompletion() > 0 {
             errorMsgLabel.text = "Need to finish game entry"
             return
         } else {

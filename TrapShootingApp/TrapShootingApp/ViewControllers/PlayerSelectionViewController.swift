@@ -13,6 +13,7 @@ class PlayerSelectionViewController: UIViewController, UITableViewDataSource, UI
     //outlet for tableview inside our PlayerSelectionViewController
     @IBOutlet weak var playerSelectionTableView: UITableView!
     
+    
     //loading and setting delegates
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +35,9 @@ class PlayerSelectionViewController: UIViewController, UITableViewDataSource, UI
         let indexItem = playerSelectionList[indexPath.row]
         let playertext = indexItem.username
         let cell = tableView.dequeueReusableCell(withIdentifier: "playerselect" )!
+        cell.layer.masksToBounds = true
+        cell.layer.cornerRadius = 2
+        cell.layer.borderWidth = 1
         cell.textLabel?.text = playertext
         return cell
     }
@@ -58,5 +62,8 @@ class PlayerSelectionViewController: UIViewController, UITableViewDataSource, UI
             
         }
     }
+    
+    //Layout Constraints
+    
     
 }
