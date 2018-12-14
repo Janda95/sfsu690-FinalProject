@@ -6,36 +6,6 @@ class Game: Codable{
     var gamedata: [Int] = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     var date: Date
     
-    var shot1: Int = 0
-    var shot2: Int = 0
-    var shot3: Int = 0
-    var shot4: Int = 0
-    var shot5: Int = 0
-    
-    var shot6: Int = 0
-    var shot7: Int = 0
-    var shot8: Int = 0
-    var shot9: Int = 0
-    var shot10: Int = 0
-    
-    var shot11: Int = 0
-    var shot12: Int = 0
-    var shot13: Int = 0
-    var shot14: Int = 0
-    var shot15: Int = 0
-    
-    var shot16: Int = 0
-    var shot17: Int = 0
-    var shot18: Int = 0
-    var shot19: Int = 0
-    var shot20: Int = 0
-    
-    var shot21: Int = 0
-    var shot22: Int = 0
-    var shot23: Int = 0
-    var shot24: Int = 0
-    var shot25: Int = 0
-    
     //For displaying information
     var gamename: String = "Game"
     var dataString: String = "Shots: "
@@ -94,7 +64,7 @@ class Game: Codable{
         var numberOfZeros: Int = 0
         //find zeros
         for shot in gamedata {
-            if gamedata[shot] == 0 {
+            if shot == 0 {
                 numberOfZeros = numberOfZeros + 1
             }
         }
@@ -105,7 +75,7 @@ class Game: Codable{
     func totalHit() -> Int {
         var counter: Int = 0
         for shot in gamedata {
-            if gamedata[shot] == 1 {
+            if shot == 1 {
                 counter = counter + 1
             }
         }
