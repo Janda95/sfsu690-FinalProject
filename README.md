@@ -1,3 +1,18 @@
+# Archived Project Notice
+
+**⚠️ This project is archived and no longer maintained.**
+
+## Reason for Archiving
+This project has been archived because it is an project including outdated dependencies and will not be updated for the forseeable future. 
+
+## Date of Archiving
+The project was archived on 7/12/2024.
+
+## Future Contributions
+This repository is now in read-only mode. No further contributions, issues, or pull requests will be accepted.
+
+
+
 # sfsu690-FinalProject
 ## Final project for (690) Interactive Multimedia Application Development at San Francisco State University. 
 
